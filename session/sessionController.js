@@ -1,18 +1,24 @@
-import { buildAuthorizedSession, buildUnAuthorizedSession } from './sessionView.js'
-
 export const sessionController = (container) => {
+    const loginLink = container.querySelector('.nav-login');
+    const createLink = container.querySelector('.nav-create');
+    const logoutButton = container.querySelector('.nav-logout');
+
+    if (!loginLink || !createLink || !logoutButton) return;
 
     const isUserLoggedIn = !!localStorage.getItem("token");
 
     if (isUserLoggedIn) {
-        container.innerHTML = buildAuthorizedSession()
+        loginLink.style.display = 'none';
+        createLink.style.display = 'inline-block';
+        logoutButton.style.display = 'inline-block';
 
-        const logoutButton = container.querySelector('.logout');
-        logoutButton.addEventListener("click", () => {
-            localStorage.removeItem("token")
-            sessionController(container)
-        })
+        logoutButton.addEventListener('click', () => {
+            localStorage.removeItem("token");
+            sessionController(container);
+        });
     } else {
-        container.innerHTML = buildUnAuthorizedSession()
+        loginLink.style.display = 'inline-block';
+        createLink.style.display = 'none';
+        logoutButton.style.display = 'none';
     }
-}
+};
