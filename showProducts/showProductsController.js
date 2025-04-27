@@ -1,5 +1,4 @@
 import { getProducts  } from "./showProductsModel.js";
-import { buildProduct, noProductsAdvice } from "./showProductsView.js";
 
 export async function showProductsController(container) {
     try {
@@ -20,12 +19,14 @@ function drawProducts(products, container) {
         productElement.classList.add("product-item");
 
         productElement.innerHTML = `
+        <a href="productdetail.html?productId=${product.id}" class="product-item">
             <img src="${product.image || 'default-image.jpg'}" alt="${product.name}" class="product-img">
             <div class="product-info">
                 <h3 class="product-name">${product.name}</h3>
                 <p class="product-description">${product.description}</p>
                 <p class="product-price">€${product.price}</p>
             </div>
+        </a>
         `;
 
         container.appendChild(productElement);
