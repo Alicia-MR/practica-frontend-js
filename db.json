@@ -1,0 +1,82 @@
+{
+  "users": [
+    {
+      "username": "ali@ali.com",
+      "password": "$2b$10$ATDtfnX0yvyItayKRLJ3v.Vbu4cdRSsE.ZF59KiSO1z08X8gS9WEK",
+      "id": 1
+    },
+    {
+      "username": "hola@hola.com",
+      "password": "$2b$10$ATDtfnX0yvyItayKRLJ3v.yYyIKCY1VAjUmDBilct.aejZvSAp2Je",
+      "id": 2
+    },
+    {
+      "username": "adios@adios.com",
+      "password": "$2b$10$ATDtfnX0yvyItayKRLJ3v.WkgZB46MzgDEggX6h8xosS5GqTRWfA2",
+      "id": 3
+    }
+  ],
+  "tweets": [],
+  "products": [
+    {
+      "name": "Cámara reflex",
+      "description": "camara reflex con muy poco uso",
+      "price": "300",
+      "sale": false,
+      "image": "https://i1.adis.ws/i/canon/3454C004_EOS-250D-BLACK-BODY-ONLY_01?w=1200&bg=rgb(245,246,246)&fmt=webp&qlt=100&sm=aspect&aspect=1:1",
+      "userId": 1,
+      "updatedAt": "2025-04-27T00:37:23.995Z",
+      "id": 1
+    },
+    {
+      "name": "Camiseta",
+      "description": "Busco camiseta como esta",
+      "price": "15",
+      "sale": false,
+      "image": "https://statics.pampling.com/imagenes/galerias/imagen_47931.jpg?1745786308",
+      "userId": 1,
+      "updatedAt": "2025-04-27T20:38:49.797Z",
+      "id": 2
+    },
+    {
+      "name": "iPhone 13",
+      "description": "En muy buen estado",
+      "price": "600",
+      "sale": false,
+      "image": "https://media1.allzone.es/994369-large_default/smartphones-iphone-13-128gb-blanco-706773.jpg",
+      "userId": 2,
+      "updatedAt": "2025-04-27T20:41:05.110Z",
+      "id": 3
+    },
+    {
+      "name": "ps5",
+      "description": "Busco ps5",
+      "price": "300",
+      "sale": false,
+      "image": "https://media.ldlc.com/r1600/ld/products/00/06/08/64/LD0006086464.jpg",
+      "userId": 2,
+      "updatedAt": "2025-04-27T20:43:16.493Z",
+      "id": 4
+    },
+    {
+      "name": "zapatillas",
+      "description": "Vendo zapatillas Nike",
+      "price": "50",
+      "sale": false,
+      "image": "https://m.media-amazon.com/images/I/61nVc5JupZL._AC_SX695_.jpg",
+      "userId": 3,
+      "updatedAt": "2025-04-27T20:44:43.648Z",
+      "id": 5
+    },
+    {
+      "name": "Busco coche Nissan",
+      "description": "Busco un coche Nissan",
+      "price": "6000",
+      "sale": false,
+      "image": "https://bordalo.observador.pt/v2/rs:fill:900/c:770:433:nowe:0:0/q:70/f:webp/plain/https://s3.observador.pt/wp-content/uploads/2017/04/14173305/426186691_sounds_superior_nissan_launches_juke_premium_special_version_with_enhanced_770x433_acf_cropped.jpg",
+      "userId": 3,
+      "updatedAt": "2025-04-27T20:46:28.868Z",
+      "id": 6
+    }
+  ]
+}
