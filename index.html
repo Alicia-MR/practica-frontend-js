@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listado de productos</title>
     <link rel="stylesheet" href="./navbar/navbarStyles.css">
-    <link rel="stylesheet" href="./styles/listingStyles.css">
+    <link rel="stylesheet" href="./listing/listingStyles.css">
 
 </head>
 <body>
@@ -17,13 +17,17 @@
             <ul>
                 <li><a href="./login.html" class="nav-login">Login</a></li>
                 <li><a href="./createListing.html" class="nav-create">Crear anuncio</a></li>
+                <li><a href="./register.html" class="nav-register">Regístrate</a></li>
                 <li><button class="nav-logout" style="display: none;">Logout</button></li>
             </ul>
         </nav>
     </header>
     <div class="session"></div>
     <div class="notifications"></div>
-    <div class="products-container"></div>
+
+    <div class="product-list-container">
+        <div class="products-container"></div>
+    </div>
 
     <script type="module" src="./index.js"></script>
 </body>

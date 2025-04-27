@@ -2,11 +2,16 @@ export const buildProductDetailView = (product) => {
     const date = new Date(product.updatedAt);
 
     return `
-            <h3>${product.name}</h3>
-            <p>${product.description}</p>
-            <p><strong>Precio:</strong> €${product.price}</p>
-            <p><small>Última actualización: ${date.toLocaleString()}</small></p>
-            <img src="${product.image}" alt="${product.name}" width="150">
+        <div class="product-detail-container">
+            <img src="${product.image}" alt="${product.name}" class="product-img">
+            <div class="product-info">
+                <h3 class="product-name">${product.name}</h3>
+                <p class="product-description">${product.description}</p>
+                <p class="product-price"><strong>Precio:</strong> €${product.price}</p>
+                <p><small>Última actualización: ${date.toLocaleString()}</small></p>
+                </div>
+            </div>
+        </div>
     `;
 };
 

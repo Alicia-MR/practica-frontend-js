@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    font-size: 16px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+form button {
+    background-color: lightseagreen;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+form div p {
+    font-size: 16px;
+    color: #333;
+}
+
+form div label {
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+form div input[type="radio"] {
+    margin-right: 5px;
+}
